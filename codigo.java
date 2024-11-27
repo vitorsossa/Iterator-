@@ -9,7 +9,7 @@ interface Iterator<T> {
 interface Lista<T> {
   Iterator<T> criarIteradorSimples();
 
-  Iterator<T> criarIteradorBFS();
+  Iterator<T> criarIteradorInverso();
 }
 
 class Node<T> {
@@ -46,8 +46,8 @@ class LinkedList<T> implements Lista<T> {
     return new LinkedListIterator<T>(this);
   }
 
-  public Iterator<T> criarIteradorBFS() {
-    // Retornar um iterador breadth first search
+  public Iterator<T> criarIteradorInverso() {
+    // Retornar um iterador inverso
     return null;
   }
 
